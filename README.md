@@ -10,10 +10,10 @@ Getting it running
 
 Shell running
 
-    docker run -i -t -p 8080:80 mysite /bin/bash
+    docker run -i -t -p 8080:80 php-apache /bin/bash
     apachectl start
 
 Mount a directory from host to conainter.
 
-    docker run -p 8080:80 -d -v /Users/dan/site:/var/www/site mysite
+    docker run -p 8080:80 -d -v /Users/kfeng/site:/var/www/site php-apache
 
